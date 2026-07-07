@@ -1,0 +1,170 @@
+/* ══════════════════════════════════════════════════════════
+   CONTACTO.CSS
+   Estilos EXCLUSIVOS de la sección Contacto.
+   El topbar, la navbar y el footer son compartidos con el
+   resto del sitio y viven en styles.css (para no duplicar
+   ni romper otras páginas). Este archivo solo define:
+   hero de contacto, tarjetas, formulario e info de contacto.
+   Se carga DESPUÉS de Bootstrap y DESPUÉS de styles.css.
+   ══════════════════════════════════════════════════════════ */
+
+:root {
+  --cam-navy: #0b2547;
+  --cam-blue: #1356a2;
+  --cam-blue-light: #1e7fc4;
+  --cam-sky: #b8d8f0;
+  --cam-sky-soft: #dde8f4;
+  --cam-gray-text: #666;
+}
+
+/* ─── HERO CONTACTO ─────────────────────────────── */
+.contact-hero {
+  background: #fff;
+  padding: 48px 0 36px;
+}
+.contact-hero-title {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--cam-navy);
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+.contact-hero-wave {
+  margin-bottom: 18px;
+}
+.contact-hero-text {
+  font-size: 14px;
+  color: #555;
+  max-width: 480px;
+  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ─── SECCIÓN CONTACTO ─────────────────────────────── */
+.contact-section {
+  background: #f0f5fa;
+  padding: 52px 0;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.08);
+  padding: 32px 30px;
+}
+.contact-card-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 22px;
+}
+
+/* Formulario: reusamos form-control de Bootstrap y solo ajustamos detalles */
+.contact-form .form-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+.contact-form .form-control {
+  font-size: 13px;
+  border-radius: 6px;
+  border-color: #dde3ea;
+  padding: 10px 12px;
+}
+.contact-form .form-control:focus {
+  border-color: var(--cam-blue-light);
+  box-shadow: 0 0 0 0.2rem rgba(30,127,196,0.15);
+}
+.contact-form textarea.form-control {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.contact-submit-btn {
+  background: var(--cam-blue-light);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 11px 26px;
+  border: none;
+  border-radius: 6px;
+}
+.contact-submit-btn:hover {
+  background: #176aaa;
+  color: #fff;
+}
+
+/* Información de contacto */
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+.contact-info-item .contact-info-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--cam-sky-soft);
+  color: var(--cam-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-right: 14px;
+}
+.contact-info-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: var(--cam-gray-text);
+}
+.contact-info-text strong {
+  color: #111;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.contact-info-divider {
+  border-top: 1px solid #e5edf5;
+  margin: 18px 0;
+}
+
+.contact-social-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 12px;
+}
+.contact-social-icons a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--cam-sky-soft);
+  color: var(--cam-blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 13px;
+}
+.contact-social-icons a:hover {
+  background: var(--cam-blue-light);
+  color: #fff;
+}
+
+/* ─── RESPONSIVE AJUSTES FINOS ─────────────────────────────── */
+@media (max-width: 767.98px) {
+  .contact-hero { padding: 36px 0 28px; }
+  .contact-hero-title { font-size: 26px; }
+  .contact-card { padding: 24px 20px; }
+  .contact-section { padding: 36px 0; }
+}
+
+@media (min-width: 576px) {
+  .contact-submit-btn.w-sm-auto { width: auto !important; }
+}

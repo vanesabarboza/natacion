@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Atlético Monte Grande – Natación</title>
+
+  <!-- 1) BOOTSTRAP 5 (siempre antes que el CSS propio) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- 2) CSS PROPIO DEL SITIO (sobrescribe solo lo necesario) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav class="navbar navbar-expand-lg site-navbar sticky-top">
+    <div class="container-fluid px-3 px-lg-4">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="Club Atlético Monte Grande" class="site-navbar-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0 gap-lg-4 text-center text-lg-start">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="actividades.html">Actividades</a></li>
+          <li class="nav-item"><a class="nav-link site-navbar-contact" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-xl-6">
+          <div class="hero-content">
+            <h1>Aprendé, entrená y disfrutá<br>la natación</h1>
+            <p class="sub">Actividades para todas las edades en la pileta<br>climatizada del Club Atlético Monte Grande.</p>
+            <div class="hero-buttons d-flex flex-wrap gap-2">
+              <a href="actividades.html" class="btn-blue">VER ACTIVIDADES <span class="arrow">›</span></a>
+              <a href="https://w.app/aguasabiertasvan" class="btn-ghost">CONTACTAR POR WHATSAPP</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ STATS BAR ═══════════ -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center text-center text-md-start">
+
+        <div class="col">
+          <div class="stat-item d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+            <div class="stat-icon">
+              <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="5" r="4" stroke="#1356a2" stroke-width="1.8" fill="none"/>
+                <path d="M8 14 Q12 8 16 10 Q20 12 24 14" stroke="#1356a2" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                <path d="M6 20 Q10 16 14 18 Q18 20 22 18 Q26 16 28 18" stroke="#1356a2" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="stat-text">
+              <div class="stat-number">+20 años</div>
+              <div class="stat-label">de experiencia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="stat-item d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+            <div class="stat-icon">
+              <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="7" r="4" stroke="#1356a2" stroke-width="1.8" fill="none"/>
+                <path d="M3 26 Q3 18 11 18 Q19 18 19 26" stroke="#1356a2" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                <circle cx="21" cy="7" r="3" stroke="#1356a2" stroke-width="1.5" fill="none" opacity="0.6"/>
+                <path d="M19 26 Q19 20 24 20 Q27 20 27 24" stroke="#1356a2" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+              </svg>
+            </div>
+            <div class="stat-text">
+              <div class="stat-number">+500</div>
+              <div class="stat-label">alumnos</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="stat-item d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+            <div class="stat-icon">
+              <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="8" width="26" height="16" rx="2" stroke="#1356a2" stroke-width="1.8" fill="none"/>
+                <path d="M3 16 Q8 12 13 16 Q18 20 23 16 Q27 12 29 14" stroke="#1356a2" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="stat-text">
+              <div class="stat-number">Pileta</div>
+              <div class="stat-label">climatizada</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="stat-item d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+            <div class="stat-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 3 L17 10 L25 10 L19 15 L21 22 L14 18 L7 22 L9 15 L3 10 L11 10 Z" stroke="#1356a2" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="stat-text">
+              <div class="stat-number">Profesores</div>
+              <div class="stat-label">certificados</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ ACTIVITIES ═══════════ -->
+  <section class="activities-section">
+    <div class="container">
+      <h2 class="section-heading text-center">NUESTRAS ACTIVIDADES</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+
+        <div class="col">
+          <div class="activity-card h-100">
+            <img
+              src="img/infantil.png"
+              alt="Natación Infantil"
+              onerror="this.src='https://placehold.co/400x145/1356a2/fff?text=Natación+Infantil'"
+            >
+            <div class="activity-card-body">
+              <div class="activity-card-title">NATACIÓN INFANTIL</div>
+              <div class="activity-card-desc">Clases diseñadas para niños y niñas a partir de los 3 años. Aprenden jugando y se divierten mientras ganan confianza con el agua.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="activity-card h-100">
+            <img
+              src="img/adultos.png"
+              alt="Natación para Adultos"
+              onerror="this.src='https://placehold.co/400x145/1356a2/fff?text=Natación+Adultos'"
+            >
+            <div class="activity-card-body">
+              <div class="activity-card-title">NATACIÓN PARA ADULTOS</div>
+              <div class="activity-card-desc">Clases para todos los adultos, desde principiantes hasta avanzados. Mejorá tu técnica, condición física y disfrutá de los beneficios de nadar.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="activity-card h-100">
+            <img
+              src="img/aquagym.png"
+              alt="Aquagym"
+              onerror="this.src='https://placehold.co/400x145/1356a2/fff?text=Aquagym'"
+            >
+            <div class="activity-card-body">
+              <div class="activity-card-title">AQUAGYM</div>
+              <div class="activity-card-desc">Entrenamiento físico dentro del agua que combina ejercicios cardiovasculares, tonificación y elongación. Ideal para todas las edades.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="activity-card h-100">
+            <img
+              src="img/rehabilitacion.png"
+              alt="Rehabilitación Acuática"
+              onerror="this.src='https://placehold.co/400x145/1356a2/fff?text=Rehabilitación'"
+            >
+            <div class="activity-card-body">
+              <div class="activity-card-title">REHABILITACIÓN ACUÁTICA</div>
+              <div class="activity-card-desc">Programa orientado a la recuperación física y al alivio del dolor a través de ejercicios específicos en el agua, guiados por profesionales.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ WHY US ═══════════ -->
+  <section class="why-section">
+    <div class="container">
+      <div class="row align-items-center g-4">
+
+        <div class="col-lg-5">
+          <div class="why-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1530549387789-4c1017266635?w=600&q=80"
+              alt="Pileta Monte Grande"
+              onerror="this.src='https://placehold.co/310x240/1356a2/fff?text=Pileta'"
+            >
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="why-title">¿POR QUÉ ELEGIRNOS?</div>
+          <ul class="why-list">
+            <li>Ambiente seguro, familiar y motivador</li>
+            <li>Instalaciones modernas y climatizadas</li>
+            <li>Grupos reducidos y atención personalizada</li>
+            <li>Comprometidos con tu bienestar y progreso</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 d-none d-lg-flex justify-content-center">
+          <div class="dots-grid">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CTA BANNER ═══════════ -->
+  <div class="cta-banner-wrapper">
+    <div class="container">
+      <div class="cta-banner d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <div class="cta-left d-flex align-items-center gap-3">
+          <div class="cta-avatar flex-shrink-0">
+            <div class="cta-avatar-placeholder"></div>
+          </div>
+          <div class="cta-text">
+            <h3>¿Tenés dudas? Estamos para ayudarte</h3>
+            <p>Escribinos por WhatsApp y te asesoramos sin compromiso.</p>
+          </div>
+        </div>
+        <a href="https://w.app/aguasabiertasvan" class="btn-whatsapp">ESCRIBIR POR WHATSAPP</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer-site">
+    <div class="container">
+      <div class="row g-4 footer-site-grid">
+
+        <div class="col-lg-4">
+          <div class="d-flex align-items-start gap-3">
+            <img src="img/logo.png" alt="Logo" class="footer-site-logo flex-shrink-0">
+            <p class="footer-site-text mb-0">
+              Pileta climatizada del Club Atlético Monte Grande.
+              Desde hace más de 20 años promoviendo la natación.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <h4 class="footer-site-heading">Enlaces rápidos</h4>
+          <ul class="footer-site-links list-unstyled row row-cols-2">
+            <li class="col"><a href="index.html">Inicio</a></li>
+            <li class="col"><a href="nosotros.html">Nosotros</a></li>
+            <li class="col"><a href="actividades.html">Actividades</a></li>
+            <li class="col"><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <h4 class="footer-site-heading">Contacto</h4>
+          <div class="footer-site-contact d-flex flex-column gap-2">
+            <div><i class="fa-solid fa-phone footer-site-icon"></i> 4290-7961</div>
+            <div><i class="fa-brands fa-whatsapp footer-site-icon"></i> 11 4870 6006</div>
+            <div><i class="fa-solid fa-location-dot footer-site-icon"></i> Arana 701 – Monte Grande</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-site-bottom text-center">
+        © 2026 Club Atlético Monte Grande · Todos los derechos reservados
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP BUNDLE (necesario para navbar-toggler y collapse) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

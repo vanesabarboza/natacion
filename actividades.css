@@ -1,0 +1,99 @@
+/* ══════════════════════════════════════════════════════════
+   ACTIVIDADES.CSS
+   Estilos EXCLUSIVOS de la página Actividades.
+   Topbar, navbar y footer son compartidos y viven en styles.css.
+   Se carga DESPUÉS de Bootstrap y DESPUÉS de styles.css.
+   ══════════════════════════════════════════════════════════ */
+
+:root {
+  --cam-navy: #0b2547;
+  --cam-blue: #1356a2;
+  --cam-blue-light: #1e7fc4;
+}
+
+/* ─── HERO / TÍTULO ─────────────────────────────── */
+.actividades-hero {
+  background: #fff;
+  padding: 48px 0 40px;
+}
+.actividades-hero-title {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--cam-navy);
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+.actividades-hero-wave {
+  margin-bottom: 18px;
+}
+.actividades-hero-lead {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--cam-navy);
+  margin-bottom: 8px;
+}
+.actividades-hero-sub {
+  font-size: 13.5px;
+  color: var(--cam-blue-light);
+  margin-bottom: 0;
+}
+
+/* ─── LISTADO DE ACTIVIDADES ─────────────────────────────── */
+.actividades-list {
+  background: #f0f5fa;
+  padding: 8px 0 56px;
+}
+.actividad-row { padding: 16px 0; }
+
+.actividad-image-wrap {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(11,37,71,0.1);
+}
+.actividad-image-wrap img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.actividad-image-wrap:hover img {
+  transform: scale(1.08);
+}
+
+.actividad-title {
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--cam-navy);
+  margin-bottom: 10px;
+}
+.actividad-desc {
+  font-size: 13px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  max-width: 480px;
+}
+.actividad-tag {
+  display: inline-block;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--cam-blue-light);
+}
+
+.actividad-divider {
+  border-top: 1px solid #dde8f4;
+  margin: 0;
+  opacity: 1;
+}
+
+/* ─── RESPONSIVE AJUSTES FINOS ─────────────────────────────── */
+@media (max-width: 767.98px) {
+  .actividades-hero { padding: 36px 0 30px; }
+  .actividades-hero-title { font-size: 26px; }
+  .actividad-desc { max-width: 100%; }
+  .actividad-row { text-align: center; }
+  .actividad-desc { margin-left: auto; margin-right: auto; }
+}

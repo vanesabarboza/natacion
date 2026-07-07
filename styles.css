@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ══════════════════════════════════════════════════════════
+   STYLES.CSS — Identidad visual compartida del sitio.
+   Se carga DESPUÉS de Bootstrap 5 para sobrescribir solo
+   lo necesario (colores, tipografía, tarjetas, botones).
+   La estructura (grid/responsive) la resuelve Bootstrap.
+   ══════════════════════════════════════════════════════════ */
+
+:root {
+  --cam-navy: #0b2547;
+  --cam-navy-dark: #1a1a2e;
+  --cam-blue: #1356a2;
+  --cam-blue-light: #1e7fc4;
+  --cam-sky: #b8d8f0;
+  --cam-sky-soft: #dde8f4;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #222;
+  background: #fff;
+}
+
+/* ─── TOP BAR ─────────────────────────────── */
+.site-topbar {
+  background: var(--cam-navy-dark);
+  color: #ccc;
+  font-size: 11.5px;
+}
+.site-topbar-info span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.site-topbar-info .phone-icon { color: #e44; font-size: 10px; }
+.site-topbar-info .mobile-icon,
+.site-topbar-info .pin-icon { color: #ccc; font-size: 10px; }
+.site-topbar-social a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #444;
+  border-radius: 3px;
+}
+.site-topbar-social a:hover { color: #fff; border-color: #888; }
+
+/* ─── NAVBAR ─────────────────────────────── */
+.site-navbar {
+  background: #fff;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.site-navbar-logo {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.site-navbar .nav-link {
+  color: #333;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+.site-navbar .nav-link:hover { color: var(--cam-blue); }
+.site-navbar .nav-link.site-navbar-contact { color: var(--cam-blue-light); }
+
+/* ─── HERO ─────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 320px;
+  background:
+    linear-gradient(to right, rgba(8,28,55,0.88) 35%, rgba(8,28,55,0.35) 70%, rgba(8,28,55,0.1) 100%),
+    url('img/background.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 52px 0;
+  color: #fff;
+  overflow: hidden;
+}
+.hero h1 {
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 14px;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+.hero-subtitle-ghost {
+  font-size: 14px;
+  color: rgba(180,210,240,0.5);
+  margin-bottom: 2px;
+  font-style: italic;
+}
+.hero p.sub {
+  font-size: 13.5px;
+  color: #b8d8f0;
+  margin-bottom: 26px;
+  line-height: 1.6;
+  max-width: 380px;
+}
+.btn-blue {
+  background: var(--cam-blue-light);
+  color: #fff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+.btn-blue:hover { background: #176aaa; color: #fff; }
+.btn-blue .arrow { font-size: 14px; }
+.btn-ghost {
+  background: transparent;
+  color: rgba(255,255,255,0.85);
+  padding: 10px 20px;
+  border: 1.5px solid rgba(255,255,255,0.55);
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-ghost:hover { background: rgba(255,255,255,0.1); color: #fff; }
+
+/* ─── STATS BAR ─────────────────────────── */
+.stats-bar {
+  background: #fff;
+  padding: 26px 0;
+  border-bottom: 1px solid #e5edf5;
+}
+.stat-icon {
+  color: var(--cam-blue);
+  opacity: 0.75;
+  line-height: 1;
+}
+.stat-number {
+  font-size: 19px;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.1;
+}
+.stat-label {
+  font-size: 11.5px;
+  color: #777;
+  margin-top: 1px;
+}
+
+/* ─── ACTIVITIES ─────────────────────────── */
+.activities-section {
+  background: #f0f5fa;
+  padding: 48px 0 52px;
+}
+.section-heading {
+  font-size: 19px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  letter-spacing: 1.5px;
+  margin-bottom: 32px;
+}
+.activity-card {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  text-align: left;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.activity-card:hover {
+  box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+  transform: translateY(-3px);
+}
+.activity-card img {
+  width: 100%;
+  height: 145px;
+  object-fit: cover;
+  display: block;
+}
+.activity-card-body {
+  padding: 14px 14px 18px;
+}
+.activity-card-title {
+  font-size: 12.5px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 7px;
+  letter-spacing: 0.3px;
+}
+.activity-card-desc {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.65;
+}
+
+/* ─── WHY US ─────────────────────────────── */
+.why-section {
+  background: #fff;
+  padding: 50px 0;
+}
+.why-image-wrap {
+  height: 240px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #c8d8e8;
+}
+.why-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.why-title {
+  font-size: 17px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #111;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+}
+.why-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+.why-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 13px;
+  color: #444;
+  line-height: 1.5;
+}
+.why-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--cam-blue-light);
+}
+.dots-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 10px);
+  gap: 8px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--cam-sky-soft);
+}
+
+/* ─── CTA BANNER ─────────────────────────── */
+.cta-banner-wrapper {
+  background: #fff;
+  padding: 10px 0 50px;
+  position: relative;
+  z-index: 2;
+}
+.cta-banner {
+  background: #1a5db8;
+  padding: 24px 28px;
+  border-radius: 6px;
+  box-shadow: 0 8px 28px rgba(19,86,162,0.28);
+}
+.cta-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.cta-avatar-placeholder {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #b0c8e8;
+}
+.cta-text h3 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 3px;
+}
+.cta-text p {
+  color: #a8ccea;
+  font-size: 12.5px;
+  margin: 0;
+}
+.btn-whatsapp {
+  background: #fff;
+  color: var(--cam-blue);
+  padding: 11px 26px;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-whatsapp:hover { background: #e4f0fb; color: var(--cam-blue); }
+.btn-whatsapp::before { content: '✉'; font-size: 13px; }
+
+/* ─── FOOTER (compartido) ─────────────────────────────── */
+.footer-site {
+  background: var(--cam-navy);
+  color: #8aaec8;
+  padding: 42px 0 20px;
+}
+.footer-site-grid { margin-bottom: 26px; }
+.footer-site-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.footer-site-text {
+  font-size: 12.5px;
+  line-height: 1.75;
+  color: #7a9cb8;
+}
+.footer-site-heading {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 14px;
+}
+.footer-site-links { --bs-gutter-x: 10px; row-gap: 6px; }
+.footer-site-links a {
+  color: #7a9cb8;
+  text-decoration: none;
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+.footer-site-links a:hover { color: #fff; }
+.footer-site-contact {
+  font-size: 12.5px;
+  color: #7a9cb8;
+}
+.footer-site-contact .fc-icon,
+.footer-site-icon { color: var(--cam-blue-light); font-size: 13px; }
+.footer-site-bottom {
+  border-top: 1px solid rgba(255,255,255,0.07);
+  padding-top: 16px;
+  font-size: 11px;
+  color: #4a6a88;
+}
+
+/* ─── RESPONSIVE AJUSTES FINOS ─────────────────────────────── */
+@media (max-width: 991.98px) {
+  .hero { text-align: left; padding: 44px 0; }
+  .hero h1 { font-size: 30px; }
+}
+@media (max-width: 767.98px) {
+  .cta-banner { text-align: center; }
+  .cta-left { flex-direction: column; }
+}

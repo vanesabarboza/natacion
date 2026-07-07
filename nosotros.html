@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros | Club Atlético Monte Grande</title>
+
+<!-- 1) BOOTSTRAP 5 (siempre antes que el CSS propio) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- 2) FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- 3) CSS COMPARTIDO DEL SITIO (topbar, navbar, footer) -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- 4) CSS ESPECÍFICO SOLO PARA NOSOTROS -->
+<link rel="stylesheet" href="nosotros.css">
+</head>
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav class="navbar navbar-expand-lg site-navbar sticky-top">
+    <div class="container-fluid px-3 px-lg-4">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="Club Atlético Monte Grande" class="site-navbar-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0 gap-lg-4 text-center text-lg-start">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="actividades.html">Actividades</a></li>
+          <li class="nav-item"><a class="nav-link site-navbar-contact" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO / TÍTULO ═══════════ -->
+  <section class="nosotros-hero text-center">
+    <div class="container">
+      <h1 class="nosotros-hero-title">Nosotros</h1>
+      <svg class="nosotros-hero-wave mx-auto d-block" width="60" height="20" viewBox="0 0 60 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 14 Q10 4 18 14 T34 14 T50 14" stroke="#1e7fc4" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══════════ INTRO: TEXTO + IMAGEN ═══════════ -->
+  <section class="nosotros-intro">
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-lg-6">
+          <p class="nosotros-intro-text">
+            Somos la pileta climatizada “AGUAS ABIERTAS - Piletas Climatizadas”
+            Desde hace más de 20 años promovemos la natación, la salud para todas
+            las edades y niveles, y el bienestar de toda la comunidad a través de programas.
+            Contamos con instalaciones climatizadas, profesionales capacitados
+            y un ambiente seguro, familiar y motivador.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="nosotros-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1530549387789-4c1017266635?w=800&q=80"
+              alt="Pileta climatizada Club Atlético Monte Grande"
+              onerror="this.src='https://placehold.co/600x340/1356a2/fff?text=Pileta'"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ MISIÓN / VISIÓN / VALORES ═══════════ -->
+  <section class="mvv-section">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-3 g-4 g-lg-5">
+
+        <div class="col">
+          <div class="mvv-card d-flex gap-3">
+            <div class="mvv-icon flex-shrink-0"><i class="fa-solid fa-compass"></i></div>
+            <div>
+              <h3 class="mvv-title">Misión</h3>
+              <p class="mvv-text">
+                Fomentar la práctica de la natación y actividades para una vida más saludable,
+                brindando enseñanza de calidad en un entorno seguro y profesional.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="mvv-card d-flex gap-3">
+            <div class="mvv-icon flex-shrink-0"><i class="fa-regular fa-eye"></i></div>
+            <div>
+              <h3 class="mvv-title">Visión</h3>
+              <p class="mvv-text">
+                Ser un referente en enseñanza y entrenamiento acuático, destacado por la
+                calidad humana, la excelencia profesional y el compromiso de nuestra comunidad.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="mvv-card d-flex gap-3">
+            <div class="mvv-icon flex-shrink-0"><i class="fa-regular fa-heart"></i></div>
+            <div>
+              <h3 class="mvv-title">Valores</h3>
+              <ul class="valores-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-circle-check"></i> Compromiso</li>
+                <li><i class="fa-solid fa-circle-check"></i> Respeto</li>
+                <li><i class="fa-solid fa-circle-check"></i> Trabajo en equipo</li>
+                <li><i class="fa-solid fa-circle-check"></i> Excelencia</li>
+                <li><i class="fa-solid fa-circle-check"></i> Inclusión</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer-site">
+    <div class="container">
+      <div class="row g-4 footer-site-grid">
+
+        <div class="col-lg-4">
+          <div class="d-flex align-items-start gap-3">
+            <img src="img/logo.png" alt="Logo" class="footer-site-logo flex-shrink-0">
+            <p class="footer-site-text mb-0">
+              Pileta climatizada del Club Atlético Monte Grande.
+              Desde hace más de 20 años promoviendo la natación.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <h4 class="footer-site-heading">Enlaces rápidos</h4>
+          <ul class="footer-site-links list-unstyled row row-cols-2">
+            <li class="col"><a href="index.html">Inicio</a></li>
+            <li class="col"><a href="nosotros.html">Nosotros</a></li>
+            <li class="col"><a href="actividades.html">Actividades</a></li>
+            <li class="col"><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <h4 class="footer-site-heading">Contacto</h4>
+          <div class="footer-site-contact d-flex flex-column gap-2">
+            <div><i class="fa-solid fa-phone footer-site-icon"></i> 4290-7961</div>
+            <div><i class="fa-brands fa-whatsapp footer-site-icon"></i> 11 4870 6006</div>
+            <div><i class="fa-solid fa-location-dot footer-site-icon"></i> Arana 701 – Monte Grande</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-site-bottom text-center">
+        © 2026 Club Atlético Monte Grande · Todos los derechos reservados
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP BUNDLE (necesario para navbar-toggler y collapse) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

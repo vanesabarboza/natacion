@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actividades | Club Atlético Monte Grande</title>
+
+<!-- 1) BOOTSTRAP 5 (siempre antes que el CSS propio) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- 2) FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- 3) CSS COMPARTIDO DEL SITIO (topbar, navbar, footer) -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- 4) CSS ESPECÍFICO SOLO PARA ACTIVIDADES -->
+<link rel="stylesheet" href="actividades.css">
+</head>
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav class="navbar navbar-expand-lg site-navbar sticky-top">
+    <div class="container-fluid px-3 px-lg-4">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="Club Atlético Monte Grande" class="site-navbar-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0 gap-lg-4 text-center text-lg-start">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link active" href="actividades.html">Actividades</a></li>
+          <li class="nav-item"><a class="nav-link site-navbar-contact" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO / TÍTULO ═══════════ -->
+  <section class="actividades-hero text-center">
+    <div class="container">
+      <h1 class="actividades-hero-title">Actividades</h1>
+      <svg class="actividades-hero-wave mx-auto d-block" width="60" height="20" viewBox="0 0 60 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 14 Q10 4 18 14 T34 14 T50 14" stroke="#1e7fc4" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <p class="actividades-hero-lead">Contamos con programas para todas las edades y objetivos.</p>
+      <p class="actividades-hero-sub">Descubrí nuestras actividades y elegí la que más se adapta a vos.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════ LISTADO DE ACTIVIDADES ═══════════ -->
+  <section class="actividades-list">
+    <div class="container">
+
+      <div class="row align-items-center g-4 g-lg-5 actividad-row">
+        <div class="col-lg-5">
+          <div class="actividad-image-wrap">
+            <img src="img/infantil.png" alt="Natación Infantil"
+              onerror="this.src='https://placehold.co/400x260/1356a2/fff?text=Natación+Infantil'">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <h3 class="actividad-title">Natación infantil</h3>
+          <p class="actividad-desc">
+            Clases diseñadas para niños y niñas a partir de los 3 años.
+            A través de juegos y la enseñanza progresiva, enseñamos
+            la confianza en el agua, la técnica y el amor por la natación.
+          </p>
+          <span class="actividad-tag">Grupos por edades y niveles</span>
+        </div>
+      </div>
+
+      <hr class="actividad-divider">
+
+      <div class="row align-items-center g-4 g-lg-5 actividad-row">
+        <div class="col-lg-5">
+          <div class="actividad-image-wrap">
+            <img src="img/adultos.png" alt="Natación para Adultos"
+              onerror="this.src='https://placehold.co/400x260/1356a2/fff?text=Natación+Adultos'">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <h3 class="actividad-title">Natación para adultos</h3>
+          <p class="actividad-desc">
+            Clases para todos los niveles, desde principiantes hasta
+            avanzados. Mejorá tu técnica, resistencia y disfrutá de
+            los beneficios de nadar.
+          </p>
+          <span class="actividad-tag">Horarios flexibles</span>
+        </div>
+      </div>
+
+      <hr class="actividad-divider">
+
+      <div class="row align-items-center g-4 g-lg-5 actividad-row">
+        <div class="col-lg-5">
+          <div class="actividad-image-wrap">
+            <img src="img/aquagym.png" alt="Aquagym"
+              onerror="this.src='https://placehold.co/400x260/1356a2/fff?text=Aquagym'">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <h3 class="actividad-title">Aquagym</h3>
+          <p class="actividad-desc">
+            Entrenamiento físico dentro del agua que combina ejercicios
+            cardiovasculares, tonificación y elongación. Ideal para
+            mejorar tu condición física de manera divertida.
+          </p>
+          <span class="actividad-tag">Para todas las edades</span>
+        </div>
+      </div>
+
+      <hr class="actividad-divider">
+
+      <div class="row align-items-center g-4 g-lg-5 actividad-row">
+        <div class="col-lg-5">
+          <div class="actividad-image-wrap">
+            <img src="img/rehabilitacion.png" alt="Rehabilitación Acuática"
+              onerror="this.src='https://placehold.co/400x260/1356a2/fff?text=Rehabilitación'">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <h3 class="actividad-title">Rehabilitación acuática</h3>
+          <p class="actividad-desc">
+            Programa orientado a la recuperación física y al alivio del
+            dolor a través de ejercicios específicos en el agua, guiados
+            por profesionales especializados.
+          </p>
+          <span class="actividad-tag">Consultá por indicaciones y turnos</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer-site">
+    <div class="container">
+      <div class="row g-4 footer-site-grid">
+
+        <div class="col-lg-4">
+          <div class="d-flex align-items-start gap-3">
+            <img src="img/logo.png" alt="Logo" class="footer-site-logo flex-shrink-0">
+            <p class="footer-site-text mb-0">
+              Pileta climatizada del Club Atlético Monte Grande.
+              Desde hace más de 20 años promoviendo la natación.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <h4 class="footer-site-heading">Enlaces rápidos</h4>
+          <ul class="footer-site-links list-unstyled row row-cols-2">
+            <li class="col"><a href="index.html">Inicio</a></li>
+            <li class="col"><a href="#">Promociones</a></li>
+            <li class="col"><a href="nosotros.html">Nosotros</a></li>
+            <li class="col"><a href="#">Novedades</a></li>
+            <li class="col"><a href="actividades.html">Actividades</a></li>
+            <li class="col"><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <h4 class="footer-site-heading">Contacto</h4>
+          <div class="footer-site-contact d-flex flex-column gap-2">
+            <div><i class="fa-solid fa-phone footer-site-icon"></i> 4290-7961</div>
+            <div><i class="fa-brands fa-whatsapp footer-site-icon"></i> 11 4870 6006</div>
+            <div><i class="fa-solid fa-location-dot footer-site-icon"></i> Arana 701 – Monte Grande</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-site-bottom text-center">
+        © 2026 Club Atlético Monte Grande · Todos los derechos reservados
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP BUNDLE (necesario para navbar-toggler y collapse) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
